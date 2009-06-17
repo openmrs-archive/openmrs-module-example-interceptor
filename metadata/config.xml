@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//OpenMRS//DTD OpenMRS Config 1.0//EN" "http://resources.openmrs.org/doctype/config-1.0.dtd">
+
+<module configVersion="1.0">
+	
+	<!-- interceptorexample Module Properties -->
+	<id>interceptorexample</id>
+	<name>interceptorexample Module</name>
+	<version>0.1</version>
+	<package>org.openmrs.module.@MODULE_ID@</package>
+	<author>bwolfe</author>
+	<description>
+		An simple module that just adds a hibernate interceptor to openmrs 
+	</description>
+	<activator>@MODULE_PACKAGE@.InterceptorexampleModuleActivator</activator>
+	<!-- /interceptorexample Module Properties -->
+	
+</module>

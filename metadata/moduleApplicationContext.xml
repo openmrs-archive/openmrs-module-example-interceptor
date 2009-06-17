@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<!-- Beans to add to the current Application context definition -->
+  
+<beans>
+	
+    <bean id="sessionFactoryLoggingInterceptorOverride" parent="sessionFactory">
+    	<property name="globalSessionInterceptor" ref="exampleLoggingInterceptor"/>
+	</bean>
+	
+	<bean id="exampleLoggingInterceptor" class="org.openmrs.module.interceptorexample.db.hibernate.HibernateLoggingInterceptor"/>
+	
+</beans>
