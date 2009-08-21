@@ -36,6 +36,9 @@ public class HibernateLoggingInterceptor extends EmptyInterceptor {
 	
 	private static Log log = LogFactory.getLog(HibernateLoggingInterceptor.class);
 	
+	public HibernateLoggingInterceptor() {
+		log.info("Instantiating interceptor");
+	}
 	/**
 	 * @see org.hibernate.EmptyInterceptor#onCollectionRecreate(java.lang.Object,
 	 *      java.io.Serializable)
